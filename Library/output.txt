@@ -1,0 +1,26 @@
+[Running] cd "/Users/bhargavannem/Desktop/LASA-AP-CS/Library/" && javac LibraryRunner.java && java LibraryRunner
+size =  9
+toString() = ["Things Fall Apart" by Chinua Achebe, "Fairy tales" by Hans Christian Andersen, "The Divine Comedy" by Dante Alighieri, "Epic of Gilgamesh" by Anonymous, "Already Gone" by John Rector, "The Invention of Wings: A Novel" by Sue Monk Kidd, "Term Limits" by V. Flynn, "In the Blood: A Novel" by Lisa Unger, "What She Left Behind" by Ellen M. Wiseman]
+contains = true
+myLib searchByAuthor() = ["Things Fall Apart" by Chinua Achebe]
+newLib searchByAuthor() = []
+myLib searchByTitle() = ["The Divine Comedy" by Dante Alighieri, "The Invention of Wings: A Novel" by Sue Monk Kidd, "In the Blood: A Novel" by Lisa Unger]
+newLib searchByTitle() = []
+myLib searchByRating() = ["Term Limits" by V. Flynn, "What She Left Behind" by Ellen M. Wiseman]
+newLib searchByRating() = []
+union = ["Things Fall Apart" by Chinua Achebe, "Fairy tales" by Hans Christian Andersen, "The Divine Comedy" by Dante Alighieri, "Epic of Gilgamesh" by Anonymous, "Already Gone" by John Rector, "The Invention of Wings: A Novel" by Sue Monk Kidd, "Term Limits" by V. Flynn, "In the Blood: A Novel" by Lisa Unger, "What She Left Behind" by Ellen M. Wiseman, "Missing You" by Harlan Coben, "We Are Water: A Novel" by Wally Lamb, "Undeniable" by Madeline Sheehan, "What She Left Behind" by Ellen M. Wiseman]
+getBooks() = ["Missing You" by Harlan Coben, "We Are Water: A Novel" by Wally Lamb, "Undeniable" by Madeline Sheehan, "What She Left Behind" by Ellen M. Wiseman]
+myLib searchByAuthor() = []
+newLib searchByAuthor() = []
+equals() = true
+equals() = false
+testLib = ["Missing You" by Harlan Coben, "We Are Water: A Novel" by Wally Lamb, "Undeniable" by Madeline Sheehan, "What She Left Behind" by Ellen M. Wiseman, "Einstein: His Life and Universe" by Walter Isaacson]
+removed book = "We Are Water: A Novel" by Wally Lamb
+added book = "Fairy tales" by Hans Christian Andersen
+removed book = true ("Missing You" by Harlan Coben)
+removed book = false ("Missing You" by Harlan Coben)
+testLib = ["Undeniable" by Madeline Sheehan, "What She Left Behind" by Ellen M. Wiseman, "Einstein: His Life and Universe" by Walter Isaacson, "Fairy tales" by Hans Christian Andersen]
+index of "We Are Water: A Novel" by Wally Lamb = -1
+index of "What She Left Behind" by Ellen M. Wiseman = 1
+
+[Done] exited with code=0 in 1.383 seconds

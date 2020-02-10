@@ -1,5 +1,4 @@
 // add import statements
-import com.sun.xml.internal.fastinfoset.algorithm.HexadecimalEncodingAlgorithm;
 
 import java.text.DecimalFormat;
 import java.util.Scanner;

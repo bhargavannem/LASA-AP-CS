@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - PlayListRunner",
+            "request": "launch",
+            "mainClass": "PlayListRunner",
+            "projectName": "Album_467c198c"
+        }
+    ]
+}

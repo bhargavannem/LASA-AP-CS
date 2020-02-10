@@ -1,0 +1,42 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-elevator<UILite_Jan_8_2bfc68f6>",
+            "request": "launch",
+            "mainClass": "elevator",
+            "projectName": "UILite_Jan_8_2bfc68f6"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-hello<UILite_Jan_8_2bfc68f6>",
+            "request": "launch",
+            "mainClass": "hello",
+            "projectName": "UILite_Jan_8_2bfc68f6"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-test<UILite_Jan_8_2bfc68f6>",
+            "request": "launch",
+            "mainClass": "test",
+            "projectName": "UILite_Jan_8_2bfc68f6"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-test2<UILite_Jan_8_2bfc68f6>",
+            "request": "launch",
+            "mainClass": "test2",
+            "projectName": "UILite_Jan_8_2bfc68f6"
+        }
+    ]
+}
