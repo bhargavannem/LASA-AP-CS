@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*
 /    Authors:
 /        B. Annem
@@ -8,6 +9,8 @@
         CardGame.java
         CardPlayer.java
 */
+=======
+>>>>>>> 215e92c77c3b064abea00bdfaf7b3c54ea749560
 import java.util.ArrayList;
 import java.lang.Math;
 
@@ -41,8 +44,12 @@ public class CardPlayerLevel1 extends CardPlayer {
             if (has_suit) {
                 while (true) {
                     int rand = (int) (Math.random() * super.getHand().size());
+<<<<<<< HEAD
                     if (super.getHand().get(rand).getSuit().equals(suit_needed)
                             && !super.getHand().get(rand).equals(new Card("Q", "spades", 12))) {
+=======
+                    if (super.getHand().get(rand).getSuit().equals(suit_needed)) {
+>>>>>>> 215e92c77c3b064abea00bdfaf7b3c54ea749560
                         return super.playCard(rand);
                     }
                 }
@@ -60,7 +67,33 @@ public class CardPlayerLevel1 extends CardPlayer {
                 }
                 return super.playCard(highest_loc);
             } else {
+<<<<<<< HEAD
                 return super.playCard((int) (Math.random() * super.getHand().size()));
+=======
+                int highest_val = 0;
+                int highest_loc = 0;
+                boolean contains_high_val = false;
+                for (Card c : round) {
+                    if (c.getSuit().equals("hearts") || (c.equals(new Card("Q", "spades", 12))))
+                        ;
+                }
+                for (int i = 0; i < super.getHand().size(); i++) {
+                    if (contains_high_val) {
+
+                        if (super.getHand().get(i).getValue() < highest_val) {
+                            highest_val = super.getHand().get(i).getValue();
+                            highest_loc = i;
+                        }
+                    } else {
+                        if (super.getHand().get(i).getValue() > highest_val) {
+                            highest_val = super.getHand().get(i).getValue();
+                            highest_loc = i;
+                        }
+                    }
+
+                }
+                return super.playCard(highest_loc);
+>>>>>>> 215e92c77c3b064abea00bdfaf7b3c54ea749560
             }
         } else {
             Card two_of_clubs = new Card("2", "clubs", 2);

@@ -23,7 +23,6 @@ public class BAnnemGibraltar extends AbstractLocale {
 
     @Override
     public double getCurrencyValue(double dollarAmount) {
-    return dollarAmount * 0.780634;
+        return dollarAmount * 0.780634;
     }
-
 }

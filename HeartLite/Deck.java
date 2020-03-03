@@ -3,8 +3,11 @@
     Authors:
         B. Annem
         B. Woytek
+<<<<<<< HEAD
     Dependencies:
         Card.java
+=======
+>>>>>>> 215e92c77c3b064abea00bdfaf7b3c54ea749560
 */
 import java.lang.Math;
 import java.util.*;
@@ -50,7 +53,11 @@ public class Deck {
             int card_loc = 0;
             int random_loc;
             for (int i = 0; i < card_num; i++) {
+<<<<<<< HEAD
                 random_loc = (int) (Math.random() * dk.size());
+=======
+                random_loc = (int) (Math.random() * 52);
+>>>>>>> 215e92c77c3b064abea00bdfaf7b3c54ea749560
                 Card c = getCard(card_loc);
                 dk.remove(i);
                 dk.add(random_loc, c);
@@ -60,10 +67,13 @@ public class Deck {
         }
     }
 
+<<<<<<< HEAD
     public void shuffle2(){
         Collections.shuffle(dk);
     }
 
+=======
+>>>>>>> 215e92c77c3b064abea00bdfaf7b3c54ea749560
     @Override
     public String toString() {
         String temp = "";

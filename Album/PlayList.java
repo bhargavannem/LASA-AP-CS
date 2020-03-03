@@ -66,6 +66,11 @@ public class PlayList {
 				someNum++;
 			}
 		}
+<<<<<<< HEAD
+=======
+		int lis = list.length;
+		int xval = x;
+>>>>>>> 215e92c77c3b064abea00bdfaf7b3c54ea749560
 		int diff = 0;
 		if ((someNum != list.length && someNum == 0) || x > list.length - 1) {
 			diff = x - (list.length - 1);

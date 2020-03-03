@@ -1,5 +1,12 @@
+<<<<<<< HEAD
 public class SongRunner {
 	public static void main(String[] args) {
+=======
+public class SongRunner
+{
+	public static void main(String[] args)
+	{
+>>>>>>> 215e92c77c3b064abea00bdfaf7b3c54ea749560
 		// create object using default constructor
 		Song test1 = new Song();
 		// test the default constructor which also tests the toString() method
@@ -28,7 +35,11 @@ public class SongRunner {
 		System.out.println(test2.getLength());
 		// call the equals method on non-equal objects
 		System.out.println(test1.equals(test2));
+<<<<<<< HEAD
 		// call the equals method on equal objects
+=======
+		//call the equals method on equal objects
+>>>>>>> 215e92c77c3b064abea00bdfaf7b3c54ea749560
 		System.out.println(test2.equals(test3));
 	}
 }
