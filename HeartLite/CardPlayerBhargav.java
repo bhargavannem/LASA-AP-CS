@@ -93,12 +93,11 @@ public class CardPlayerBhargav extends CardPlayer {
         int index_of = 0;
         int lowest_val = 15;
         int index_of_low = 0;
-        int lowest_heart_val = 15;
         int lowest_heart_index = 0;
         boolean early_in_game = game.size() < 20;
         // Search for 2 or 3 of Hearts
         // Search for highest cards that are not hearts to play
-        if(early_in_game){
+        if (early_in_game) {
             for (int p = 0; p < super.getHand().size(); p++) {
                 if (super.getHand().get(p).getValue() > highest_val && !super.getHand().get(p).getClass().equals("h")) {
                     highest_val = super.getHand().get(p).getValue();
@@ -107,21 +106,18 @@ public class CardPlayerBhargav extends CardPlayer {
                 } else if (super.getHand().get(p).getClass().equals("h") && super.getHand().get(p).getValue() < 15) {
                     if (super.getHand().get(p).getValue() < 4) {
                         lowest_heart_index = p;
-                        lowest_heart_val = super.getHand().get(p).getValue();
                     }
                 }
             }
-    }
-    else{
-        for (int p = 0; p < super.getHand().size(); p++) {
-            if (super.getHand().get(p).getValue() < lowest_val && !super.getHand().get(p).getClass().equals("h")) {
-                lowest_val = super.getHand().get(p).getValue();
-                index_of_low = p;
+        } else {
+            for (int p = 0; p < super.getHand().size(); p++) {
+                if (super.getHand().get(p).getValue() < lowest_val && !super.getHand().get(p).getClass().equals("h")) {
+                    lowest_val = super.getHand().get(p).getValue();
+                    index_of_low = p;
 
-            } else if (super.getHand().get(p).getClass().equals("h") && super.getHand().get(p).getValue() < 15) {
-                if (super.getHand().get(p).getValue() < 4) {
-                    lowest_heart_index = p;
-                    lowest_heart_val = super.getHand().get(p).getValue();
+                } else if (super.getHand().get(p).getClass().equals("h") && super.getHand().get(p).getValue() < 15) {
+                    if (super.getHand().get(p).getValue() < 4) {
+                        lowest_heart_index = p;
                 }
             }
         }

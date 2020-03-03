@@ -1,20 +1,16 @@
-<<<<<<< HEAD
+
 
 /*
 /    Authors:
 /        B. Annem
 */
-=======
->>>>>>> 215e92c77c3b064abea00bdfaf7b3c54ea749560
 import java.util.ArrayList;
-import java.util.Collections;
 
 public class TestCardPlayerLevel1 {
 	final static int HEARTS_VAL = 1;
 	final static int QUEEN_VAL = 13;
 
 	public static void main(String[] args) {
-<<<<<<< HEAD
 
 		ArrayList<Card> hand = new ArrayList<Card>();
 		CardPlayer c = new CardPlayerLevel1("John Griffin", hand, 0);
@@ -61,7 +57,6 @@ public class TestCardPlayerLevel1 {
 		System.out.println("Card played in round -> " + in_round);
 		System.out.println("RANDOMLY chosen card -> " + c.chooseCard(in_round, in_game) + " Player -> " + c);
 		in_round.clear();
-=======
 		/*
 		 * ArrayList<Card> hand = new ArrayList<Card>(); CardPlayerLevel1 c = new
 		 * CardPlayerLevel1("Kara Jones", hand, 0);
@@ -161,6 +156,5 @@ public class TestCardPlayerLevel1 {
 			round.clear();
 		}
 
->>>>>>> 215e92c77c3b064abea00bdfaf7b3c54ea749560
 	}
 }
