@@ -1,13 +1,46 @@
 import java.io.File;
 import java.io.FilenameFilter;
-import java.util.ArrayList;
-
+import java.util.*;
 public class LocaleLoader {
 
   public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
     ArrayList<AbstractLocale> locales = getLocales();
     // Your code goes here.
-    System.out.println(locales);
+    for(int i = 0; i < locales.size(); i++){
+      System.out.println("" + (i + 1) + ". " + locales.get(i).getLocation() + " (" + locales.get(i).getLanguage() + ")");
+    }
+    System.out.print("What locale do you want? ");
+    String user_location = sc.nextLine();
+    int index_of = 0;
+    for(int j = 0; j < locales.size(); j++){
+      AbstractLocale al = locales.get(j);
+      if (al.getLocation().equals(user_location)){
+        index_of = j;
+      }
+    }
+    AbstractLocale user = locales.get(index_of);
+    System.out.println(user.getGreeting());
+    
+    System.out.println("What's the hour? ");
+    int hour = sc.nextInt();
+    sc.nextLine();
+    
+    System.out.println("What's the minute? ");
+    int minute = sc.nextInt();
+    sc.nextLine();
+    System.out.println("The local time is " + user.getLocalTime(hour, minute));
+/*
+    How much money do you have in your 
+    wallet or purse? <user input>
+In <location>, that’s worth
+    <currency symbol><currency value>!
+    */
+
+    System.out.println("How much money do you have in your wallet or purse? ");
+    double money = sc.nextDouble();
+    System.out.println("In " + user.getLocation() + ", that's worth " + user.getCurrencySymbol() + user.getCurrencyValue(money));
+    sc.close();
   }
 
   /**
@@ -24,7 +57,7 @@ public class LocaleLoader {
         public boolean accept(File dir, String name) {
           return name.endsWith(".class");
         }});
-    for(File f : classFiles) {
+    for(File f : classFiles) { 
       String className = f.getName().replace(".class", "");
       try {
         Class<?> c = Class.forName(className);
