@@ -3,15 +3,16 @@ public class BAnnemGibraltar extends AbstractLocale {
         super("Gibraltar", "English");
     }
 
+    public BAnnemGibraltar(String Country, String Language){
+        super(Country, Language);
+    }
     @Override
     public String getGreeting() {
-        // TODO Auto-generated method stub
         return "Hello!";
     }
 
     @Override
     public String getCurrencySymbol() {
-        // TODO Auto-generated method stub
         return "£";
     }
 
@@ -22,7 +23,7 @@ public class BAnnemGibraltar extends AbstractLocale {
     }
 
     @Override
-    public double getCurrencyValue(double dollarAmount) {
+    public double getCurrencyValue(double dollarAmount){
         return dollarAmount * 0.780634;
     }
 }
